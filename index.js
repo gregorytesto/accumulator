@@ -40,7 +40,7 @@ function stringNames(students) {
 
 }
 
-stringNames(studentsArr);
+console.log(stringNames(studentsArr));
 //> "Leanne Graham, Ervin Howell, Clementine Bauch, Patricia Lebsack, John Dietrich, Dennis Schulist"
 
 /**
@@ -52,7 +52,7 @@ function arrayNames(students) {
 
 }
 
-arrayNames(studentsArr);
+console.log(arrayNames(studentsArr));
 //> ['Leanne Graham', 'Ervin Howell', 'Clementine Bauch', 'Patricia Lebsack', 'John Dietrich', 'Dennis Schulist']
 
 /**
@@ -65,10 +65,10 @@ function findByName(students, name) {
 
 }
 
-findByName(studentsArr, "Clementine Bauch");
+console.log(findByName(studentsArr, "Clementine Bauch"));
 //> { "name": "Clementine Bauch", "GPA": 3.4, "role": "Teacher's Assistant" }
 
-findByName(studentsArr, "John Dietrich");
+console.log(findByName(studentsArr, "John Dietrich"));
 //> { "name": "John Dietrich", "GPA": 3.7, "role": "Hall Monitor" }
 
 /**
@@ -80,7 +80,7 @@ function findAverageGPA(students) {
 
 }
 
-findAverageGPA(studentsArr);
+console.log(findAverageGPA(studentsArr));
 //> 3.45
 
 /**
@@ -93,7 +93,7 @@ function filterByRole(students, role) {
 
 }
 
-filterByRole(studentsArr, "Hall Monitor");
+console.log(filterByRole(studentsArr, "Hall Monitor"));
 //> [
 //     {
 //         "name": "Ervin Howell",
@@ -107,7 +107,7 @@ filterByRole(studentsArr, "Hall Monitor");
 //     }
 // ]
 
-filterByRole(studentsArr, "Teacher's Assistant");
+console.log(filterByRole(studentsArr, "Teacher's Assistant"));
 //> [
 //     {
 //         "name": "Clementine Bauch",
@@ -120,3 +120,15 @@ filterByRole(studentsArr, "Teacher's Assistant");
 //         "role": "Teacher's Assistant",
 //     }
 // ]
+
+/**
+ * Finds the student with the lowest GPA.
+ * @param {Object[]} students - An array of objects, each representing a student.
+ * @returns {Object} The student with the lowest GPA.
+ * */
+function findLowestGPAStudent(students) {
+
+}
+
+console.log(findLowestGPAStudent(studentsArr));
+//> { name: "Ervin Howell", GPA: 2.9, role: "Hall Monitor" }
